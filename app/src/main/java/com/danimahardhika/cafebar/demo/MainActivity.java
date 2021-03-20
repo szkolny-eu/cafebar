@@ -2,22 +2,24 @@ package com.danimahardhika.cafebar.demo;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatButton;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
 import com.danimahardhika.cafebar.CafeBar;
 import com.danimahardhika.cafebar.CafeBarCallback;
 import com.danimahardhika.cafebar.CafeBarGravity;
 import com.danimahardhika.cafebar.CafeBarTheme;
+import com.google.android.material.snackbar.Snackbar;
 
-import uk.co.chrisjenx.calligraphy.CalligraphyTypefaceSpan;
-import uk.co.chrisjenx.calligraphy.TypefaceUtils;
+import io.github.inflationx.calligraphy3.CalligraphyTypefaceSpan;
+import io.github.inflationx.calligraphy3.TypefaceUtils;
 
 public class MainActivity extends AppCompatActivity {
 

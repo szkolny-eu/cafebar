@@ -18,6 +18,7 @@ package com.danimahardhika.cafebar;
  * limitations under the License.
  */
 
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
@@ -31,14 +32,6 @@ import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.AppCompatDrawableManager;
-import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -51,7 +44,16 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.Locale;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 
 class CafeBarUtil {
 
@@ -260,7 +262,7 @@ class CafeBarUtil {
         }
 
         TextView textView = snackBarLayout.findViewById(
-                android.support.design.R.id.snackbar_text);
+                R.id.snackbar_text);
         if (textView != null) textView.setVisibility(View.INVISIBLE);
 
         boolean tabletMode = builder.mContext.getResources().getBoolean(R.bool.cafebar_tablet_mode);
@@ -295,6 +297,7 @@ class CafeBarUtil {
             if (!builder.mShowShadow) {
                 cardView.setCardElevation(0f);
             }
+            cardView.setRadius(builder.mContext.getResources().getDimensionPixelSize(R.dimen.cafebar_radius));
 
             cardView.addView(cafeBarLayout);
             snackBarLayout.addView(cardView, 0);
@@ -445,7 +448,7 @@ class CafeBarUtil {
     @Nullable
     static Drawable getDrawable(@NonNull Context context, @DrawableRes int res) {
         try {
-            Drawable drawable = AppCompatDrawableManager.get().getDrawable(context, res);
+            Drawable drawable = context.getResources().getDrawable(res);
             return drawable.mutate();
         } catch (OutOfMemoryError e) {
             return null;

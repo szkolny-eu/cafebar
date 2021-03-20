@@ -18,8 +18,9 @@ package com.danimahardhika.cafebar;
  * limitations under the License.
  */
 
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 class LogUtil {
 

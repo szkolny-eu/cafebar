@@ -23,7 +23,6 @@ group = 'com.github.danimahardhika'
 
 android {
     compileSdkVersion rootProject.ext.CompileSdk
-    buildToolsVersion rootProject.ext.BuildTools
 
     defaultConfig {
         minSdkVersion rootProject.ext.MinSdk
@@ -54,7 +53,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:design:$rootProject.ext.SupportLibrary"
-    compile "com.android.support:cardview-v7:$rootProject.ext.SupportLibrary"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.AppCompat}"
+    implementation "androidx.cardview:cardview:${rootProject.ext.CardView}"
+    implementation "com.google.android.material:material:${rootProject.ext.Material}"
 }

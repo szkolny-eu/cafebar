@@ -18,4 +18,6 @@
     <dimen name="cafebar_floating_max_width">368dp</dimen>
     <dimen name="cafebar_floating_padding">16dp</dimen>
 
+    <dimen name="cafebar_radius">4dp</dimen>
+
 </resources>

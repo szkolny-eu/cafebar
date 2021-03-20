@@ -15,49 +15,49 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true">
 
-            <android.support.v7.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/under_navbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Under Navbar" />
 
-            <android.support.v7.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/above_navbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Above Navbar" />
 
-            <android.support.v7.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/above_navbar_move_fab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Above Navbar Move Fab" />
 
-            <android.support.v7.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/floating_under_navbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Floating Under Navbar" />
 
-            <android.support.v7.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/floating_above_navbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Floating Above Navbar" />
 
-            <android.support.v7.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/floating_above_navbar_move_fab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Floating Above Navbar Move Fab" />
 
-            <android.support.v7.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/with_custom_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="With Custom View" />
 
-            <android.support.v7.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/floating_with_custom_view_move_fab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,17 +65,17 @@
 
         </LinearLayout>
 
-        <android.support.design.widget.CoordinatorLayout
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:id="@+id/coordinator"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.design.widget.FloatingActionButton
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end" />
 
-        </android.support.design.widget.CoordinatorLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     </FrameLayout>
 

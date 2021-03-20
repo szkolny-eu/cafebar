@@ -19,7 +19,8 @@ package com.danimahardhika.cafebar;
  */
 
 import android.graphics.Color;
-import android.support.annotation.ColorInt;
+
+import androidx.annotation.ColorInt;
 
 @SuppressWarnings("unused")
 public enum CafeBarTheme {
